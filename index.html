@@ -18,7 +18,7 @@
 	img,iframe{
 		width: 100%;
 	}
-	a{
+	.enlace_visita{
 		text-decoration: none;
 		color: #fff;
 		background-color: rgba(0,0,0);
@@ -29,34 +29,44 @@
 		padding: 10px;
 		margin: 5px;
 	}
-	a:hover{
+	.enlace_visita:hover{
 		font-size: 16px;
 		text-decoration: underline;
 	}
-   @media (min-width:768px){
+    @media (max-width:340px) and (min-width:250px){
         p{
-            	font-size: 12px;
+            font-size: 12px;
         }
-       a{
-		text-decoration: none;
-		color: #fff;
-		background-color: rgba(0,0,0);
-		font-family: arial;
-		font-size: 15px;
-		border-radius: 40px;
-		text-align: center;
-		padding: 25px;
-		margin: 25px;
-	}
-	h1,h2{
-		font-size: 45px;
+        .enlace_visita{
+            font-size: 15px;
         }
+        body{
+            background-color: red;
+        }
+    }
+    .menu_enlaces{
+        text-decoration: none;
+        padding: 5px;
+        justify-content: space-between;
+        text-align: center;
+        font-size: 25px;
+        color: rgba(0, 0, 0, .6);
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+    .menu_enlaces:hover{
+        text-decoration:underline;
+        color: rgb(0, 0, 0);
     }
 </style>
 <body>
 	<!-- El h1 es un titulo mayor -->
 	<h1>Viaje a Xilitla</h1>
-	<hr>
+    <a href="#" class="menu_enlaces">Ubicación</a>
+	<a href="#" class="menu_enlaces">Galería</a>
+    <a href="#" class="menu_enlaces">Boletos</a>
+    <br><br>
+    <hr>
 <p>	El patrimonio Cultural se considera fuente esencial de identidad, ya que sus 		diversas manifestaciones son primordiales para vincular el pasado y el presente de 	   los pueblos.
 </p>
 <p>
@@ -66,9 +76,9 @@
 	Cabe destacar que en estos sitios Edward James, artista Inglés, con la colaboración de Plutarco Gastélum Esquer, adquiere los predios en mención en el año de 1948 e inicia las intervenciones que concibió y realizó el extranjero para su refugio privado e interés creativo en 1952. En las Pozas, zona de cascadas, aves y exuberante vegetación, el artista realiza una serie de construcciones, esculturas, caminos, pozas y jardines con características surealistas de sorprendente creatividad que se integran al paisaje natural de la selva de forma singular y única creando un paisaje cultural.
 </p>
 <img src="imagenes/viaje1.png">
-<br><br>    
+<br><br>   
 <center>
-    <a href="https://visitasanluispotosi.com/xilitla/" target="_blank">Ver más</a>
+    <a href="https://visitasanluispotosi.com/xilitla/" target="_blank" class="enlace_visita">Ver más</a>
 </center>
 <h2>Ubicación</h2>
 <p>Camino Paseo Las Pozas</p>
